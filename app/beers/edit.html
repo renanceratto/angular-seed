@@ -1,0 +1,17 @@
+<h2>{{cervejaAlterada}}</h2>
+
+<form>
+	<p>
+		<td for="cerveja.name">Nome:</td>
+		<input type="text" data-ng-model="cerveja.name">
+	</p>
+	<p>
+		<label for="cerveja.description">Descrição:</label>
+		<input type="text" data-ng-model="cerveja.description">
+	</p>
+	<p>
+		<label for="cerveja.abv">ABV:</label>
+		<input type="text" data-ng-model="cerveja.abv">
+	</p>
+	<button data-ng-click="edit(cerveja)">Alterar</button>
+</form>

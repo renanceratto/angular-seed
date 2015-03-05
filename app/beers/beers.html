@@ -1,0 +1,29 @@
+<div class="formulario">
+	<p>
+		<label for="filtro">Filtro Nome:	
+			<input type="text" id="filtro" data-ng-model="filtro.name">
+		</label>
+	</p>
+	
+	<!-- {{ beers }} -->
+	<table>
+		<thead>
+			<td>Nome</td>
+			<td>Descrição</td>
+			<td>Cervejaria</td>
+			<td>ABV</td>
+			<td colspan=2>Ações</td>	
+		</thead>
+		<tbody>
+			<tr data-ng-repeat='c in cervejas | filter:filtro | orderBy:"abv":true'>
+				<td><a data-ng-href="/#/beers/{{c._id}}">{{c.name}}</a></td>
+				<td>{{ c.description | truncate }}</td>
+				<td>{{ c.brewery.name }}</td>
+				<td>{{ c.abv }}</td>
+				<td><a href="/#/beers/{{ c._id }}/edit">Alterar</a></td>
+				<td><button data-ng-click="delete(c)">Excluir</button></td>
+			</tr>
+		</tbody>
+		<tr></tr>
+	</table>
+</div>
