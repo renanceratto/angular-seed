@@ -35,25 +35,33 @@ table {
   width: 100%; 
   border-collapse: 
   collapse; border-spacing: 0; 
-  padding-left: 100 px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
-td, th { 
+td, thead { 
   border: 1px solid #CCC; 
   height: 30px; 
 } /* Make cells a bit taller */
 
-th {
+thead {
   background: #F3F3F3; /* Light grey background */
   font-weight: bold; /* Make sure they're bold */
 }
-
 td {
   background: #FAFAFA; /* Lighter grey background */
   text-align: center; /* Center our text */
 }
 
-.formulario {
-  padding-left: 30px;
-  padding-right: 30px;
+.form-view label  {
+  display: block;
+}
+
+.form-view label * {
+  display: block;
+  margin-bottom: 10px;
+}
+
+textarea {
+  width: 500px;
 }

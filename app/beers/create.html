@@ -1,17 +1,17 @@
 <h2>{{cervejaNova.name | cervejaCadastrada}}</h2>
 
-<form>
-	<p>
-		<label for="cerveja.name">Nome:</label>
+<form class="form-view">
+	<label for="cerveja.name">Nome:
 		<input type="text" data-ng-model="cerveja.name">
-	</p>
-	<p>
-		<label for="cerveja.description">Descrição:</label>
+	</label>
+
+	<label for="cerveja.description">Descrição:
 		<input type="text" data-ng-model="cerveja.description">
-	</p>
-	<p>
-		<label for="cerveja.abv">ABV:</label>
+	</label>
+
+	<label for="cerveja.abv">ABV:
 		<input type="text" data-ng-model="cerveja.abv">
-	</p>
+	</label>
+
 	<button data-ng-click="create(cerveja)">Cadastrar</button>
 </form>

@@ -2,7 +2,12 @@
   'use strict';
 
   // Criando o module
-  angular.module('myApp.beers', ['ngRoute', 'myApp.beers.filters', 'myApp.beers.services', 'myApp.beers.controllers'])
+  angular.module('myApp.beers', ['ngRoute'
+                                  , 'myApp.beers.filters'
+                                  , 'myApp.beers.services'
+                                  , 'myApp.beers.controllers'
+                                  , 'myApp.beers.directives'
+                                  ])
   .config(['$routeProvider', function($routeProvider) {
     $routeProvider.when('/beers', {
       templateUrl: 'beers/beers.html',

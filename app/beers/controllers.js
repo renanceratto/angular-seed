@@ -3,7 +3,8 @@
   .controller('BeerListController', BeerListController)
   .controller('BeerCreateController', BeerCreateController)
   .controller('BeerGetController', BeerGetController)
-  .controller('BeerEditController', BeerEditController);
+  .controller('BeerEditController', BeerEditController)
+  ;
 
   function BeerListController ($scope, $http, BeerService) {
 
